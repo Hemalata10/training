@@ -2,36 +2,53 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Lexend Deca', sans-serif;
-    border-radius: 10px;
+    font-family: "Lexend Deca", sans-serif;
 }
-.container{
-    padding: 10px;
+.box-grid{
+    padding: 25px;
     width: 60%;
     height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width:1200px;
+    color: white;
 }
-.container .item{
+.box-grid-item{
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
 }
-.containt .grid .first .img{
-    margin-bottom: 20px;
+.item-content{
+    height: 100%;
 }
-.containt .grid .first .heading{
-    font-family: 'Big Shoulders Display', cursive;
+.item-content#col-1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.item-content#col-2{
+    background-color:hsl(184, 100%, 22%);
+}
+.item-content#col-3{
+    background-color:hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.image{
+    padding: 20px;
+}
+.heading{
+    font-family:"Big Shoulders Display", cursive;
     text-transform: uppercase;
     font-size: 30px;
-    margin-bottom: 30px;
+    padding: 20px;
 }
-.containt .grid .first .para{
+.para{
     font-size: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     line-height: 1.6;
+    padding: 25px;
 }
 .btn{
     background-color: white;
@@ -40,6 +57,8 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    margin-left: 20px;
+    margin-bottom: 25px;
 }
 .btn:hover{
     background-color: transparent;
